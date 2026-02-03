@@ -3,8 +3,10 @@
 Projeto em Java que simula o monitoramento do nível de água de um reservatório,
 classificando o estado operacional (Normal, Atenção, Alerta, etc.) com base no
 volume útil.
+
 Projeto de monitoramento hidrológico com cálculo de número de Froude
 e carga hidráulica para aplicações em usinas hidrelétricas.
+
 Este projeto implementa, em Java, o cálculo da vazão afluente utilizando calhas Parshall, amplamente empregadas em medições hidrológicas.
 
 ## Fórmula Utilizada
