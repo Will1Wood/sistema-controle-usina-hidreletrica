@@ -27,10 +27,23 @@ public class Main {
         //Digite a velocidade em JUSANTE (m/s):
         m.setVelocidadeJusante(1.5);
 
-        //Entreda dados da medição do nivel afluente
+        //Entrada dados da medição do nivel afluente
         MedicaoVazaoAfluente medicaoAfluente = new MedicaoVazaoAfluente(0.45, LarguraCalhaParshall.FT_1);
 
+        //Entrada medição nivel defluente
+        MedicaoVazaoDefluente medicaoDefluente =
+            new MedicaoVazaoDefluente(
+                1.84,
+                2.0,
+                0.45,
+                TipoVertedor.RETANGULAR
+            );
+
         /*--------------------------- saída ----------------------------- */
+
+        //saida medição nivel defluente
+        double vazaoDefluente = medicaoDefluente.calcularVazaoDefluente();
+        System.out.println("Vazão defluente: " + vazaoDefluente + " m³/s");
 
         //saida medição do nivel afluente
         double vazao = medicaoAfluente.calcularVazao();
