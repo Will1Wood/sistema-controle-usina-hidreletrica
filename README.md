@@ -5,6 +5,23 @@ classificando o estado operacional (Normal, Atenção, Alerta, etc.) com base no
 volume útil.
 Projeto de monitoramento hidrológico com cálculo de número de Froude
 e carga hidráulica para aplicações em usinas hidrelétricas.
+Este projeto implementa, em Java, o cálculo da vazão afluente utilizando calhas Parshall, amplamente empregadas em medições hidrológicas.
+
+## Fórmula Utilizada
+Formula para a medição do nível afluente
+O cálculo da vazão é feito a partir da equação empírica:
+Q=C⋅H^n
+Onde:
+
+Q → Vazão (m³/s)
+
+C → Coeficiente da calha
+
+H → Nível de água (m)
+
+n → Expoente associado à calha
+
+Os valores de C e n variam conforme a largura da calha Parshall, seguindo tabelas técnicas padronizadas.
 
 ## Módulos
 - Monitoramento hidrológico e ambiental

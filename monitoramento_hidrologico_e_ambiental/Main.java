@@ -27,6 +27,15 @@ public class Main {
         //Digite a velocidade em JUSANTE (m/s):
         m.setVelocidadeJusante(1.5);
 
+        //Entreda dados da medição do nivel afluente
+        MedicaoVazaoAfluente medicaoAfluente = new MedicaoVazaoAfluente(0.45, LarguraCalhaParshall.FT_1);
+
+        /*--------------------------- saída ----------------------------- */
+
+        //saida medição do nivel afluente
+        double vazao = medicaoAfluente.calcularVazao();
+        System.out.println("Vazão afluente: " + vazao + " m³/s");
+
         //Saida de montante e jusante
         m.numeroDeFroude();
         m.calculoCargaHidraulicaTotal();
