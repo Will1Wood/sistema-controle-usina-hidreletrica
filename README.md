@@ -10,7 +10,9 @@ Este projeto implementa, em Java, o cálculo da vazão afluente utilizando calha
 ## Fórmula Utilizada
 Formula para a medição do nível afluente
 O cálculo da vazão é feito a partir da equação empírica:
+
 Q=C⋅H^n
+
 Onde:
 
 Q → Vazão (m³/s)
